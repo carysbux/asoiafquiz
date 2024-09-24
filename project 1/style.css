@@ -1,0 +1,89 @@
+
+
+body {
+
+  background-image: url("images/sleepingdany.JPG");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Change to column layout */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#quiz-container {
+  position: sticky;
+  background-color: rgb(223, 97, 25);
+  opacity: .75;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(252, 212, 137, 0.1);
+  text-align: center;
+  width: 300px;
+}
+
+#options {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button.correct {
+  background-color: #4CAF50;
+  color: white;
+}
+
+button.incorrect {
+  background-color: #f44336;
+  color: white;
+}
+
+button.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+#next-btn {
+  margin-top: 20px;
+}
+
+#try-again-btn {
+  display: inline-block; /* Use inline-block for better styling */
+  padding: 10px 20px;
+  background-color:  rgb(223, 97, 25); /* Background color */
+  color:whitesmoke; /* Text color */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 20px auto; /* Center the button with margin */
+  width: 50px; /* Adjust width as needed */
+  text-decoration: none; /* Remove underline */
+  outline: none; /* Remove outline */
+  text-align: center; /* Center text inside */
+}
+
+/* Hover effect for the "Try Again" button */
+#try-again-btn:hover {
+  background-color: #fe9e62; /* Light hover effect */
+}
+
+/* Remove default link styling */
+#try-again-btn:focus {
+  outline: none; /* Remove the outline when focused */
+}
